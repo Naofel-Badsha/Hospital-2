@@ -1,0 +1,866 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+:root{
+    --main: #ff041d;
+    --font: #000;
+    --border: #000;
+    --span: #ff004f;
+    
+}
+*::selection{
+    background: var(--main);
+    color: #000;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+section{
+    padding: 3rem 9%;
+}
+
+html::-webkit-scrollbar{
+    width: 100%;
+}
+
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main);
+}
+
+html::-webkit-scrollbar-track{
+    background: #000;
+}
+.btn{
+ display: inline-block;
+ box-shadow: 0 0.5rem 1rem #266626;
+ margin-top: 1rem;
+ padding: 0.5rem;
+ padding-left: 1rem;
+ font-size: 2.2rem;
+ text-decoration: none;
+ font-family: sans-serif;
+ font-weight: 900;
+ color: var(--main);
+ border-radius: .5rem;
+ transition: 0.5s;
+}
+
+.btn:hover{
+    background: var(--font);
+    color: #fff;
+    border-radius: 0rem;
+    letter-spacing: 2px;
+}
+.btn span{
+    background: #266626;
+    color: #fff;
+    margin-left: 0.5rem;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
+
+.btn span:hover{
+    background: #1d4da5;
+    color: aqua;
+    margin-left: 1.1rem;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 5rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: var(--font);
+    text-decoration: underline;
+
+}
+
+.heading span{
+    color: var(--span);
+    text-decoration: underline;
+}
+/*-----Header And Navebar Section Srart------*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.5rem 1.5rem #1d4da5;
+    background: #fff;
+}
+
+.header .logo{
+    font-size: 2.3rem;
+    text-decoration: none;
+    color: #ff004f;
+    pointer-events: none;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.header .logo i{
+    color: #1d4da5;   
+}
+
+.header .navbar a{
+    color: var(--font);
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.header .navbar a:hover{
+    color: #ff004f;
+    transition: 0.4s;
+}
+
+#MenuBtn{
+    background: #cfc1c1;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--main);
+    padding: 1rem 1.3rem;
+    border-radius: 1rem;
+    display: none;
+}
+/*-----Header And Navebar Section End------*/
+
+
+
+
+
+
+
+/*-------Our Home Section Start----------*/
+.Home{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 10rem;
+}
+
+.Home .img,
+.Home .content{
+    flex: 1 1 45rem;
+}
+
+.Home .row .img img{
+    width: 100%;
+    border-radius: 1.2rem;
+    transition: 0.2s;
+}
+
+.Home .content h3{
+    font-size: 4.5rem;
+    line-height: 1.8;
+    text-shadow: 0.5rem 0 .5rem #ff004f;
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+.Home .content p{
+    font-size: 2.7rem;
+    color: var(--font);
+    padding: 1rem 0;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.6;
+}
+/*-------Our Home Section End----------*/
+
+
+
+
+
+
+
+
+/*-------Our About Section Start----------*/
+.About .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.About .row .img,
+.About .row .content{
+ flex: 1 1 45rem;
+}
+
+.About .row  .content h3{
+    font-size: 4rem;
+    line-height: 1.8;
+    text-shadow: 0.5rem 0 .5rem #ff004f;
+    font-family: sans-serif;
+}
+
+.About .row  .content p{
+    padding: 1rem 0;
+    color: var(--font);
+    font-size: 2.7rem;
+    font-weight: 600;
+    line-height: 1.6;
+    gap: 1.5rem;
+    margin-bottom: 200;
+    font-style: italic;
+}
+
+.About .row .img img{
+    width: 100%;
+    margin-top: 4rem;
+    border-radius: 1.2rem;
+    transition: 0.2s;
+}
+
+.About .row .img img:hover{
+    transform: translateY(-10px);
+}
+/*-------Our About Section End----------*/
+
+
+
+
+
+
+
+
+/*-------Our Icon Section Start----------*/
+.IconContainer{
+    margin-bottom: 200px;
+}
+
+.IconContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    gap: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.IconContainer .icons{
+    box-shadow: 0.5rem 1rem 1.5rem #1d4da5;
+    border: 0.2rem solid #ff004f;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 2.5rem;
+    transition: 0.5s;
+}
+
+.IconContainer .icons:hover{
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+.IconContainer .icons i{
+    color: #c71585;
+    padding-bottom: 0.7rem;
+    font-size: 4.5rem;
+    transition: 0.5s;
+}
+
+.IconContainer .icons:hover i{
+    transform: scale(1.8);
+}
+
+.IconContainer .icons  h3{
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    font-weight: 800;
+    padding: 0.5rem 0;
+}
+
+.IconContainer .icons p{
+    font-size: 2.7rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+/*-------Our Icon Section End----------*/
+
+
+
+
+
+/*-------Our Services Section Start----------*/
+.Services{
+    margin-bottom: 200px;
+}
+
+.Services .boxContainer, .Review .boxContaine{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
+    gap: 2rem;
+}
+
+.Services .boxContainer .box{
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 1rem 1.5rem #c71585;
+    border: 0.5rem solid var(--main);
+    padding: 2.5rem;
+    transition: 0.5s;
+}
+
+.Services .boxContainer .box:hover{
+    transform: scale(1.07);
+}
+
+.Services .boxContainer .box i{
+    color: #266626;
+    padding-bottom: 0.5rem;
+    font-size: 5rem;
+    transition: 0.5s;
+}
+
+.Services .boxContainer .box:hover i{
+    transform: scale(1.5);
+}
+
+.Services .boxContainer .box h3{
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.Services .boxContainer .box p{
+    color: var(--font);
+    font-size: 2.1rem;
+    padding: 1.0rem;
+}
+
+/*-------Our Services Section End----------*/
+
+
+
+
+
+
+
+/*-------Our Doctors Section Start----------*/
+.Doctors{
+    margin-bottom: 200px;
+}
+
+.Doctors .boxContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 2rem;
+}
+
+
+.Doctors .boxContainer .box{
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 0.2rem solid #ff004f;
+    box-shadow: 0.5rem 1rem 1.5rem #266626;
+    padding: 2rem;
+    transition: 0.5s;
+}
+
+.Doctors .boxContainer .box:hover{
+    transform: scale(1.03);
+}
+
+
+.Doctors img{
+    border: 0.2rem solid #000;
+    /*box-shadow: 0.5rem 1rem 1.5rem #1d4da5;*/
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 20rem;
+    margin-top: 1rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.Doctors .boxContainer .box:hover img{
+    transform: scale(1.08);
+}
+
+.Doctors .boxContainer .box h3{
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.Doctors .box span{
+    font-size: 2rem;
+    color: var(--main);
+    font-style: italic;
+    font-weight: 700;
+}
+
+.Doctors .boxContainer .box  .icons{
+    padding-top: 2rem;
+}
+
+.Doctors .boxContainer .box  .icons i{
+    font-size: 3rem;
+    line-height: 4.5rem;
+    height: 5rem;
+    width: 5rem;
+    color: #ff004f;
+    border:  0.2rem solid var(--border);
+    border-radius: 0.5rem;
+    margin: 0.1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Doctors .boxContainer .box  .icons i:hover{
+    background: #1d4da5;
+    color: #fff;
+    transform: translateY(-10px);
+}
+/*-------Our Doctors Section End----------*/
+
+
+
+
+
+
+
+
+/*-------Our Booking Section Start--------*/
+.Book .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.Book .row .image{
+    flex: 1 1 45rem;
+}
+
+.Book .row .image img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.Book .row .image img:hover{
+    transform: rotate(360deg);
+}
+
+.Book .row form{
+    flex: 1 1 45rem; 
+    margin-top: 40px;
+    background: #e6cccc; 
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.Book .row form h3{
+    color: var(--black);
+    padding-bottom: 1rem;
+    font-size: 4rem;
+    font-style: italic; 
+}
+
+.Book .row form .box{
+    width: 100%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    border: var(--border);
+    font-size: 1.7rem;
+    color: var(--black);
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.Book .row form .btn{
+    padding: 1.4rem;
+}
+/*-------Our Booking Section End--------*/
+
+
+
+
+
+
+
+/*-------Our Review Section Start--------*/
+.Review .box-container{
+    display: grid;
+    gap:2rem;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+   
+}
+
+.Review .box-container .box{
+    border:  0.3rem solid var(--border);
+    box-shadow: 0.5rem 1rem 1.5rem #266626;
+    border-radius: .5rem;
+    padding: 2.5rem;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.Review .box-container .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .5rem solid #000;
+}
+
+.Review .box-container .box h3{
+    color: #ffff;
+    font-size: 2.6rem;
+    padding: .5rem 0;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.Review .box-container .box  .stars{
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.Review .box-container .box .text{
+    color: var(--font);
+    line-height: 2.8rem;
+    font-size: 2.4rem;
+    padding-top: 4rem;
+    text-align: justify;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.Review .box-container .box::before{
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--main);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 25rem;
+    width: 120%;
+    z-index: -1;
+}
+/*-------Our Review Section End--------*/
+
+
+
+
+
+
+
+/*-------Our Blog Section Start--------*/
+.Blogs .box-container{
+    display: grid;
+    gap:2rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); 
+}
+
+.Blogs .box-container .box{
+    border: 0.3rem solid var(--main);
+    box-shadow: var(--main);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.Blogs .box-container .box .image{
+    height: 20rem;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.Blogs .box-container .box .image img{
+  height: 100%; 
+  width: 100%;
+  object-fit: cover; 
+  transition: 0.6s;
+  background: #fff;
+}
+
+.Blogs .box-container .box:hover .image img{
+  transform: scale(1.2);  
+}
+
+.Blogs .box-container .box .contant{
+    padding-top: 1rem;
+}
+
+.Blogs .box-container .box .contant .icon{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Blogs .box-container .box .contant .icon a{
+    font-size: 2.2rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #1d4da5;
+    text-decoration: none;
+}
+
+.Blogs .box-container .box .contant .icon a:hover{
+    color: var(--green);
+}
+.Blogs .box-container .box .contant .icon a i{
+    padding-right: .5rem;
+    color: var(--main);
+}
+
+.Blogs .box-container .box .contant h3{
+    color: #000;
+    font-size: 2.9rem;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.Blogs .box-container .box .contant p{
+    color: var(--main);
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 4px;
+    margin-top: 8px;
+}
+/*-------Our Blog Section End--------*/
+
+
+
+
+
+
+/*-------Our Foooter Section Start--------*/
+.Footer .box-container{
+    display: grid;
+    gap:2rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));  
+}
+
+.Footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: #000000;
+    padding: 1rem 0;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.Footer .box-container .box a{
+    display: block;
+    font-size: 2.3rem;
+    color: var(--font);
+    padding: 1rem 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    
+}
+
+.Footer .box-container .box a i{
+    padding-right: .5rem;
+    color: #ff004f;
+    transition: 0.5s;
+}
+
+.Footer .box-container .box a:hover i{
+    padding-right: 2rem; 
+    font-style: italic;
+}
+
+.Footer .credit{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: #000000;
+    border-top: .5rem solid #7fff00;
+}
+
+.Footer .credit span{
+   color: #ff0000;
+   text-decoration: underline;
+}
+/*-------Our Foooter Section End--------*/
+
+
+
+/*----Theme Toggele Start-------*/
+.themeToggle{
+    position: fixed;
+    top: 10rem;
+    right: -20rem;
+    background: #000;
+    align-items: center;
+    width: 20rem;
+    z-index: 1000;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+
+.themeToggle:hover{
+    background: olive;
+}
+
+.themeToggle.active{
+    right: 0;
+}
+
+
+.themeToggle h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+.themeToggle .buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+.themeToggle .themeBtn{
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.themeToggle .ToggleBtn{
+    position: absolute;
+    top: 0;
+    left: -5.9rem;
+    padding: 1.3rem 1.5rem;
+    background: #000;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+
+.themeToggle .ToggleBtn:hover{
+    background: #ff004f;
+    border-radius: 0;
+}
+
+.themeToggle .ToggleBtn i{
+    color: #fff;
+    font-size: 2rem;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(360deg);
+    }
+}
+/*----Theme Toggele End-------*/
+
+
+
+
+
+
+
+
+
+
+/*-------Media Queray-----Start--------*/
+@media(max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+}
+
+@media(max-width: 768px){
+    #MenuBtn{
+        display: inline-block;  
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 115%;
+        left: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+        border: 0.2rem solid #266626;
+        background: #fff;
+        transform: scale(0);
+        transform-origin: top right;
+        opacity: 0;
+        /*-----*/
+        width: 30rem;
+        /*-----*/
+        transition: 0.8s;
+    }
+
+    .header .navbar.active{
+        opacity: 1;
+        transform: scale(1);
+        transition: 0.4s;
+    }
+
+    .header .navbar a{
+        /*--------*/
+        display: block;
+        margin: 2.5rem;
+        font-size: 2rem;
+        text-align: center;
+        /*--------*/
+    }
+
+    @media(max-width: 450px){
+        html{
+            font-size: 50%;
+        }
+    }
+    
+}
+
+
+
+/*---Review---*/
+.Review{
+    margin-bottom: 200px;
+}
